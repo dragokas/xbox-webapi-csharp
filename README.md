@@ -35,7 +35,7 @@ success = await authenticator.DumpToJsonFileAsync(tokenFilePath);
 if (!success)
     throw new Exception("Failed to dump tokens");
 
-Console.WriteLine("Tokens saved to {}", tokenFilePath);
+Console.WriteLine("Tokens saved to {0}", tokenFilePath);
 
 Console.WriteLine(authenticator.XToken);
 Console.WriteLine(authenticator.UserInformation);
